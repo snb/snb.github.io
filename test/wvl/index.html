@@ -4,14 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webview Library Test</title>
-    <script>
-      function close() {
-        WebViewLibrary.closeAction(JSON.stringify({action: "closeAction", analytics: {eventName: "close_button"}}));
-      }
-    </script>
   </head>
   <body>
-    <button type="button" onClick="close()">Close</button>
+    <button type="button" onClick="javascript:WebViewLibrary.closeAction(JSON.stringify({action:'closeAction',analytics:{eventName:'close_button'}}));">Close</button>
     <br>
     <br>
     <marquee>Marquee forever 👍</marquee>
