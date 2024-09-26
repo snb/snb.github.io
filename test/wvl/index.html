@@ -4,8 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webview Library Test</title>
+
+    <style>
+      body {
+        width: 800px;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    </style>
+
   </head>
   <body>
+    <br>
+    <br>
     <button type="button" onClick="javascript:WebViewLibrary.handleAction(JSON.stringify({action:'closeAction',analytics:{eventName:'close_button'}}));">Close</button>
     <br>
     <br>
